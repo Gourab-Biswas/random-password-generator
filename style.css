@@ -30,6 +30,7 @@ body {
   position: absolute;
   top: 20%;
   left: 10%;
+  
 
   & h1 {
     font-size: 40px;
@@ -52,10 +53,9 @@ body {
     justify-content: space-between;
     margin-top: 50px;
     background-color: white;
-
     padding: 20px 30px;
-    width: 35rem;
     border-radius: 5px;
+    width: 35rem;
 
     & input {
       border: none;
@@ -63,6 +63,7 @@ body {
       font-size: 30px;
       color: black;
       letter-spacing: 5px;
+      width: 100%;
     }
 
     & img {
@@ -102,4 +103,73 @@ body {
       background-color: hsl(160, 97%, 40%);
     }
   }
+}
+
+
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+    .container {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 60%;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container .display {
+        width: 100%;
+        padding: 15px;
+        margin-top: 35px;
+    }
+
+    .container .display input {
+        font-size: 18px;
+        letter-spacing: 2px;
+        min-width: 0;
+    }
+
+    .container .display img {
+        width: 25px;
+    }
+
+    .container button {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .container button img {
+        width: 18px;
+    }
+}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 480px) {
+
+    .container {
+        top: 25%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 23px;
+    }
+
+    .container .display {
+        padding: 12px;
+    }
+
+    .container .display input {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
 }
