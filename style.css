@@ -62,6 +62,7 @@ body {
       outline: none;
       font-size: 30px;
       color: black;
+      letter-spacing: 5px;
     }
 
     & img {
